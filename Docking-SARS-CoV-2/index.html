@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-61606930-1');
+	</script>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Docking SARS-CoV-2 @ Home</title>
+	<meta name="keywords" content="Docking" />
+	
+	<meta name="description" content="RNASA-IMEDIR project to open docking results in SARS-CoV-2 research."><meta name="author" content="Cristian R Munteanu">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+	</script>
+	
+	<!-- File included -->
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="preload" as="document" href="extras/home_multiDockingTop5.html">
+	
+	<!-- Dynamic table -->
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        var myTable = $('#example').DataTable();
+        $('#example').on('click', 'tbody td', function () {
+            myTable.cell(this).edit();
+        });
+    });
+	</script>
+</head>
+
+<body>
+	<!-- Header menu -->
+	<div id="logo">
+		<h1><span>Docking <img alt="logo" src="images/logo.png" height="25" width="50"> SARS-CoV-2</span>
+	</div>
+	
+	<!-- Menu options -->
+	<div id="header">
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Home</a></li>
+				<li><a href="repurposing.html" accesskey="2" title="">Drug repurposing</a></li>
+				<li><a href="deepmind.html" accesskey="3" title="">DeepMind repurposing</a></li>
+				<li><a href="hitsPublications.html" accesskey="4" title="">Hits from publications</a></li>
+				<li><a href="hitsChemicalChecker.html" accesskey="5" title="">Hits from ChemChecker</a></li>
+				<li><a href="all.html" accesskey="6" title="">All interactions</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Including top5 multidocking visualization-->
+	
+		<!-- Tools -->	
+	<table style="width: 100%; text-align: justify; margin-left: auto; margin-right: auto; font-size:80%" border="0" cellpadding="5" cellspacing="5" >
+		<tbody>
+			<tr>
+				<td style="text-align: justify; vertical-align: top; width: 33%;">
+					<p><b><a href="http://www.rnasa-imedir.udc.es/en/" target="_blank">RNASA-IMEDIR</a></b> group from University of A Coruna (Spain) is joining the fight against <b>COVID19</b> with a new open Web tool: <b>Docking SARS-CoV-2</b>. The site is presents the best molecules (ligands) that interact with human and <b>SARS-CoV-2</b> proteins (targets) for the COVID-19 treatment. We predict the best compounds for treatment by calculating the interaction energies with the proteins involved in this disease. The sections include: the best compounds that bind to the human receptor - viral spike protein complex, the best current drugs that could be used against COVID-19, drug repurposing using the theoretical structures of the viral proteins predicted by <i><a href="https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19" target="_blank">DeepMind</a></i>, the interactions of the molecules proposed by publications, and the interactions of the best compounds proposed by the ChemChecker web tool. The proteins structures were downloaded from the PDB databank. The ligands were downloaded from <i><a href="https://www.drugbank.ca/" target="_blank">DrugBank database</a></i> (DB, drugs), <i><a href="https://hmdb.ca/" target="_blank">Human Metabolome Database</a></i> (HMDB, metabolites), and <i><a href="http://www.t3db.ca/" target="_blank">Toxin and Toxin Target Database or Toxic Exposome Database</a></i> (T3DB, toxic compounds).</p>
+					
+					<p>We present the chemical structures of target - ligand complexes, dynamic tables with the affinity energies (AE, kcal/mol units) to quantify the interactions, and dynamic plots. The interactions are stronger if the AE is lower (more negative, more attractive interactions). AE values are calculated with the <a href="http://vina.scripps.edu/" target="_blank">Autodock Vina</a> free software (our group <b>BioCAI</b> HPC cluster).</p>
+				</td>
+				<td style="width: 34%; text-align: center; vertical-align: top;">
+					<div align="center">
+						<iframe src="extras/home_multiDockingTop5.html" height="350" width="400" frameborder="0" scrolling=yes seamless ></iframe>
+						<p><b>Best 5 compounds interacting with the complex: human receptor ACE2 protein - viral spike protein (structure PDB ID: 6LZ6)</b></p>
+						
+					</div>	
+				</td>
+				<td style="text-align: justify; vertical-align: top; width: 33%;">
+						<p><b>This section</b>: We focus on the best compounds (drugs, metabolites or toxic subtances) that could interact with the human ACE2 receptor - virus S protein complex (target PDB ID: 6LZ6) even after the virus was coupled to the cell. The science shows that SARS-CoV-2 virus enters the human cell by binding to the human receptor ACE2 protein. Most researchers are studying the interactions of drugs or new molecules with the ACE2 receptor or virus proteins in order to stop this receptor - virus complex from forming, but not the interactions with this complex, when the virus already started the process to invade the cell.</p>
+						
+						<p><b>Hint</b>: Use full screen for molecules, rotate, zoom, select atoms. Search for compounds in the table below. The first compounds with the most negative AE value are the best interactions.</p>
+						
+						<p><font color="#27AAE1"><b>Our Results</b>: The table shows the best 100 compounds (ligands) that interact with one complex target (6LZ6). Ligand families: DB (drugs), HMDB (metabolites), T3DB (toxic compounds). The best five compounds visualized with the receptor - virus protein complex are Lolitrem B, Ovalene, Tegobuvir, Lifirafenib, Lacto-N-fucopentaose V. <a href="https://chemrxiv.org/articles/Supercomputer-aided_Drug_Repositioning_at_Scale_Virtual_Screening_for_SARS-CoV-2_Protease_Inhibitor/12101457/1?file=22253712" target="_blank">Another publication</a> shows that our best drug (Tegobuvir) interacts with other virus proteins (Mpro, main protease) too. </font></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	
+	
+	<!-- Generated dynamic table -->	
+	<div>
+		<table table id="example" style="width:100%" class="display" style="font-family:"Courier New";> 
+
+			<thead>
+    <tr style="text-align: center;">
+      <th>AE</th>
+      <th>Ligand</th>
+      <th>GENERIC_NAME</th>
+      <th>INCHI_KEY</th>
+    </tr>
+  </thead>
+				<tbody>
+    <tr>
+      <td>-10.7</td>
+      <td>T3D3767</td>
+      <td>Lolitrem B</td>
+      <td>HGBZMCXKHKZYBF-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.6</td>
+      <td>T3D0631</td>
+      <td>Ovalene</td>
+      <td>LSQODMMMSXHVCN-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.5</td>
+      <td>DB11852</td>
+      <td>Tegobuvir</td>
+      <td>XBEQSQDCBSKCHJ-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.4</td>
+      <td>DB14773</td>
+      <td>Lifirafenib</td>
+      <td>NGFFVZQXSRKHBM-FKBYEOEOSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.4</td>
+      <td>HMDB0006706</td>
+      <td>Lacto-N-fucopentaose V</td>
+      <td>TVVLIFCVJJSLBL-SEHWTJTBSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.3</td>
+      <td>DB05984</td>
+      <td>RAF-265</td>
+      <td>YABJJWZLRMPFSI-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.3</td>
+      <td>DB12411</td>
+      <td>R-428</td>
+      <td>KXMZDGSRSGHMMK-VWLOTQADSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.3</td>
+      <td>DB12154</td>
+      <td>Itacitinib</td>
+      <td>KTBSXLIQKWEBRB-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.2</td>
+      <td>DB12983</td>
+      <td>Phthalocyanine</td>
+      <td>IEQIEDJGQAUEQZ-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.2</td>
+      <td>T3D4128</td>
+      <td>Brevetoxin B</td>
+      <td>LYTCVQQGCSNFJU-FGRVLNGBSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.1</td>
+      <td>HMDB0006612</td>
+      <td>Monofucosyllacto-N-hexaose</td>
+      <td>GKEWHGPIQCSUCC-JJGOEJEFSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.0</td>
+      <td>DB14883</td>
+      <td>Lorecivivint</td>
+      <td>AQDWDWAYVBQMAM-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.0</td>
+      <td>DB06938</td>
+      <td>4-[[2-[[4-chloro-3-(trifluoromethyl)phenyl]amino]-3H-benzimidazol-5-yl]oxy]-N-methyl-pyridine-2-carboxamide</td>
+      <td>ZJLSMLDOCGOURY-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.0</td>
+      <td>HMDB0042817</td>
+      <td>TG(14:0/20:4(8Z,11Z,14Z,17Z)/24:0)</td>
+      <td>JXLIWOMLOAXJKY-LCFREUINSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.0</td>
+      <td>HMDB0048517</td>
+      <td>TG(16:1(9Z)/20:0/18:4(6Z,9Z,12Z,15Z))</td>
+      <td>GQZRZDIDOJKGLP-SIPNAMALSA-N</td>
+    </tr>
+    <tr>
+      <td>-10.0</td>
+      <td>DB11399</td>
+      <td>Dirlotapide</td>
+      <td>TUOSYWCFRFNJBS-BHVANESWSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>DB12323</td>
+      <td>Radotinib</td>
+      <td>DUPWHXBITIZIKZ-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>DB04868</td>
+      <td>Nilotinib</td>
+      <td>HHZIURLSWUIHRB-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>DB07833</td>
+      <td>N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide</td>
+      <td>PMMLSQFPBFKLHH-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>DB11977</td>
+      <td>Golvatinib</td>
+      <td>UQRCJCNVNUFYDX-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>DB05075</td>
+      <td>TG-100801</td>
+      <td>JMGXJHWTVBGOKG-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.9</td>
+      <td>HMDB0003265</td>
+      <td>Hesperidin</td>
+      <td>QUQPHWDTPGMPEX-UNZJSITISA-N</td>
+    </tr>
+    <tr>
+      <td>-9.8</td>
+      <td>DB03231</td>
+      <td>3-(5-Amino-7-oxo-3,7-dihydro-2H-[1,2,3]triazolo[4,5-d]pyrimidin-2-yl)-N-(2-{[2-(hydroxymethyl)phenyl]sulfanyl}benzyl)benzamide</td>
+      <td>IXDQOBDHBWEZOH-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.8</td>
+      <td>DB14935</td>
+      <td>Serabelisib</td>
+      <td>BLGWHBSBBJNKJO-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB14850</td>
+      <td>Deleobuvir</td>
+      <td>BMAIGAHXAJEULY-UKTHLTGXSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB12424</td>
+      <td>MK-3207</td>
+      <td>AZAANWYREOQRFB-SETSBSEESA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB11618</td>
+      <td>Zorubicin</td>
+      <td>FBTUMDXHSRTGRV-BJISBDEGSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB15399</td>
+      <td>BMS-754807</td>
+      <td>LQVXSNNAFNGRAH-QHCPKHFHSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB14785</td>
+      <td>Fenebrutinib</td>
+      <td>WNEODWDFDXWOLU-QHCPKHFHSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>HMDB0007191</td>
+      <td>DG(18:1(11Z)/18:3(6Z,9Z,12Z)/0:0)</td>
+      <td>ITGRMIJUDWFPJB-YYHNHJMXSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>DB03276</td>
+      <td>4-[(10s,14s,18s)-18-(2-Amino-2-Oxoethyl)-14-(1-Naphthylmethyl)-8,17,20-Trioxo-7,16,19-Triazaspiro[5.14]Icos-11-En-10-Yl]Benzylphosphonic Acid</td>
+      <td>RHYFMOCFCFUTNH-GZNVFMSSSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.7</td>
+      <td>T3D3688</td>
+      <td>Ergocristine</td>
+      <td>HEFIYUQVAZFDEE-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB07789</td>
+      <td>1-[5-methyl-2-(trifluoromethyl)furan-3-yl]-3-[(2Z)-5-(2-{[6-(1H-1,2,4-triazol-3-ylamino)pyrimidin-4-yl]amino}ethyl)-1,3-thiazol-2(3H)-ylidene]urea</td>
+      <td>KNTGXMNWVXZIMW-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB01897</td>
+      <td>2-(2f-Benzothiazolyl)-5-Styryl-3-(4f-Phthalhydrazidyl)Tetrazolium Chloride</td>
+      <td>BEIGFKLRGRRJJA-JLHYYAGUSA-O</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB15308</td>
+      <td>Ridinilazole</td>
+      <td>UHQFBTAJFNVZIV-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB15328</td>
+      <td>Ubrogepant</td>
+      <td>DDOOFTLHJSMHLN-ZQHRPCGSSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB12694</td>
+      <td>CE-326597</td>
+      <td>UBNMGTSDHSQBEL-PMERELPUSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB11913</td>
+      <td>LY-2090314</td>
+      <td>HRJWTAWVFDCTGO-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>DB06896</td>
+      <td>1-(4-fluorophenyl)-N-[3-fluoro-4-(1H-pyrrolo[2,3-b]pyridin-4-yloxy)phenyl]-2-oxo-1,2-dihydropyridine-3-carboxamide</td>
+      <td>OBSFXHDOLBYWRJ-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>T3D4068</td>
+      <td>C-Curarine</td>
+      <td>DWELRYDMYVJVSL-GQBJSJAWSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>HMDB0001917</td>
+      <td>Digoxin</td>
+      <td>LTMHDMANZUZIPE-PUGKRICDSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.6</td>
+      <td>T3D3733</td>
+      <td>Penitrem B</td>
+      <td>CRPJNVUYZRFGAK-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12886</td>
+      <td>GSK-1521498</td>
+      <td>WIEDUMBCZQRGSY-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB05713</td>
+      <td>LY-517717</td>
+      <td>VYNKVNDKAOGAAQ-RUZDIDTESA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12799</td>
+      <td>Laniquidar</td>
+      <td>TULGGJGJQXESOO-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>T3D3777</td>
+      <td>Paspalitrem A</td>
+      <td>WCISYVSWAOUFIY-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB00762</td>
+      <td>Irinotecan</td>
+      <td>UWKQSNNFCGGAFS-XIFFEERXSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB00320</td>
+      <td>Dihydroergotamine</td>
+      <td>LUZRJRNZXALNLM-JGRZULCMSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12690</td>
+      <td>LY-2584702</td>
+      <td>FYXRSVDHGLUMHB-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB08901</td>
+      <td>Ponatinib</td>
+      <td>PHXJVRSECIGDHY-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB02555</td>
+      <td>SP4160</td>
+      <td>VCXMTWSYQSVWRK-AREMUKBSSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB13095</td>
+      <td>JTK-853</td>
+      <td>JQLOVYLALGSISI-HXUWFJFHSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>T3D3732</td>
+      <td>Penitrem A</td>
+      <td>JDUWHZOLEDOQSR-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>T3D0677</td>
+      <td>Hydroxocobalamin</td>
+      <td>YOZNUFWCRFCGIH-WZHZPDAFSA-K</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB11904</td>
+      <td>Flumatinib</td>
+      <td>BJCJYEYYYGBROF-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12895</td>
+      <td>TD-139</td>
+      <td>YGIDGBAHDZEYMT-MQFIMZJJSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12760</td>
+      <td>GW-493838</td>
+      <td>ZQYJPMPXQLNTPQ-QCUYGVNKSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>DB12673</td>
+      <td>ATX-914</td>
+      <td>ALANRBCCCQEPFZ-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.5</td>
+      <td>HMDB0007424</td>
+      <td>DG(20:2(11Z,14Z)/18:3(9Z,12Z,15Z)/0:0)</td>
+      <td>YPKNZQFRRNHQIM-CNWVQWJYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB15310</td>
+      <td>Vactosertib</td>
+      <td>FJCDSQATIJKQKA-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB12817</td>
+      <td>Zoliflodacin</td>
+      <td>ZSWMIFNWDQEXDT-ZESJGQACSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>T3D3611</td>
+      <td>Microcystin-LF</td>
+      <td>FEVBMCJUKWWWBT-QVWKUIOOSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB13005</td>
+      <td>Rebastinib</td>
+      <td>WVXNSAVVKYZVOE-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB12892</td>
+      <td>MGB-BP-3</td>
+      <td>OEKXCVYZBVOWBR-BQYQJAHWSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB15382</td>
+      <td>SAR-125844</td>
+      <td>ODIUNTQOXRXOIV-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB13050</td>
+      <td>Tirilazad</td>
+      <td>RBKASMJPSJDQKY-RBFSKHHSSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB01411</td>
+      <td>Pranlukast</td>
+      <td>NBQKINXMPLXUET-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.4</td>
+      <td>DB07020</td>
+      <td>N-{3-[5-(1H-1,2,4-triazol-3-yl)-1H-indazol-3-yl]phenyl}furan-2-carboxamide</td>
+      <td>LMDMJDCLPIVGQD-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB11691</td>
+      <td>Naldemedine</td>
+      <td>AXQACEQYCPKDMV-RZAWKFBISA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB15035</td>
+      <td>Zanubrutinib</td>
+      <td>RNOAOAWBMHREKO-QFIPXVFZSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB11851</td>
+      <td>Bafetinib</td>
+      <td>ZGBAJMQHJDFTQJ-DEOSSOPVSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB12228</td>
+      <td>Telcagepant</td>
+      <td>CGDZXLJGHVKVIE-DNVCBOLYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>T3D3764</td>
+      <td>Janthitrem E</td>
+      <td>TVRIMSLYKUNOPS-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB08450</td>
+      <td>N-1H-indazol-5-yl-2-(6-methylpyridin-2-yl)quinazolin-4-amine</td>
+      <td>HNHRWNUXTCATSG-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB14894</td>
+      <td>Galicaftor</td>
+      <td>QVDYQHXNAQHIKH-TZIWHRDSSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>T3D4021</td>
+      <td>Digitoxin</td>
+      <td>WDJUZGPOPHTGOT-XUDUSOBPSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB06240</td>
+      <td>Tariquidar</td>
+      <td>LGGHDPFKSSRQNS-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB02336</td>
+      <td>RU83876</td>
+      <td>WCMLXBUNHNAMNH-UIOOFZCWSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB14792</td>
+      <td>AZD-5991</td>
+      <td>KBQCEQAXHPIRTF-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB08221</td>
+      <td>N-{4-METHYL-3-[(3-PYRIMIDIN-4-YLPYRIDIN-2-YL)AMINO]PHENYL}-3-(TRIFLUOROMETHYL)BENZAMIDE</td>
+      <td>NESXBRNDMQUVNG-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.3</td>
+      <td>DB07605</td>
+      <td>2-({4-[(5-CHLORO-1H-INDOL-2-YL)SULFONYL]PIPERAZIN-1-YL}CARBONYL)THIENO[3,2-B]PYRIDINE 4-OXIDE</td>
+      <td>DHDQMXPAANQKDC-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB12180</td>
+      <td>Apitolisib</td>
+      <td>YOVVNQKCSKSHKT-HNNXBMFYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB02581</td>
+      <td>5-[2,3-Dichloro-4-(5-{1-[2-(2-Guanidino-4-Methyl-Pentanoylamino)-Acetyl]-Piperidin-4-Yl}-1-Methyl-1h-Pyrazol-3-Yl)-Phenoxymethyl]-Furan-2-Carboxylic Acid</td>
+      <td>VNZHOIDQBPFEJU-OAQYLSRUSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB13109</td>
+      <td>PKI-179</td>
+      <td>WXUUCRLKXQMWRY-OYRHEFFESA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB12381</td>
+      <td>Merestinib</td>
+      <td>QHADVLVFMKEIIP-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB05611</td>
+      <td>Apilimod</td>
+      <td>HSKAZIJJKRAJAV-KOEQRZSOSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB15233</td>
+      <td>Avapritinib</td>
+      <td>DWYRIWUZIJHQKQ-SANMLTNESA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB15327</td>
+      <td>Abivertinib</td>
+      <td>UOFYSRZSLXWIQB-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB12635</td>
+      <td>Aleplasinin</td>
+      <td>HSXLMAFNWCSZGP-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB06638</td>
+      <td>Quarfloxin</td>
+      <td>WOQIDNWTQOYDLF-CGAIIQECSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB07530</td>
+      <td>(1R,3R)-5-[(2E)-3-{(1S,3R)-2,2,3-trimethyl-3-[6,6,6-trifluoro-5-hydroxy-5-(trifluoromethyl)hex-3-yn-1-yl]cyclopentyl}prop-2-en-1-ylidene]cyclohexane-1,3-diol</td>
+      <td>PCHUQQNKOFNVDU-OSXMSNBXSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB12513</td>
+      <td>Omaveloxolone</td>
+      <td>RJCWBNBKOKFWNY-IDPLTSGASA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB03571</td>
+      <td>3-(5-Amino-7-Hydroxy-[1,2,3]Triazolo[4,5-D]Pyrimidin-2-Yl)-N-(3,5-Dichlorobenzyl)-Benzamide</td>
+      <td>JMQTXEWNXSPEKX-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB15291</td>
+      <td>BMS-986142</td>
+      <td>ZRYMMWAJAFUANM-INIZCTEOSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB02112</td>
+      <td>Zk-806450</td>
+      <td>DZLGSWPXZYDHBD-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB13014</td>
+      <td>Hypericin</td>
+      <td>BTXNYTINYBABQR-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB07117</td>
+      <td>5-(4-PHENOXYPHENYL)-5-(4-PYRIMIDIN-2-YLPIPERAZIN-1-YL)PYRIMIDINE-2,4,6(2H,3H)-TRIONE</td>
+      <td>FMKQJGOROFNCGM-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>HMDB0112257</td>
+      <td>(13Z,13'Z,3R,3'R,6'R)-Lutein</td>
+      <td>KBPHJBAIARWVSC-GUPHUWDZSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB11614</td>
+      <td>Rupatadine</td>
+      <td>WUZYKBABMWJHDL-UHFFFAOYSA-N</td>
+    </tr>
+    <tr>
+      <td>-9.2</td>
+      <td>DB03331</td>
+      <td>N-Naphthalen-1-Ylmethyl-2'-[3,5-Dimethoxybenzamido]-2'-Deoxy-Adenosine</td>
+      <td>OARVXDFNTLYMCJ-JVUUKAHWSA-N</td>
+    </tr>
+  </tbody>
+		</table>
+	</div>
+
+	<!-- Copyright links, logos-->	
+	<div id="copyright">
+		<p>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
+			<a href="https://www.fic.udc.es/" target="_blank"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
+			<a href="https://www.citic.udc.es/" target="_blank"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
+			<a href="https://www.udc.es/en/" target="_blank"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
+		</p>
+	
+		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/" target="_blank">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications" target="_blank">Cristian R Munteanu</a></p>
+	</div>
+
+</body>
+
+</html>
