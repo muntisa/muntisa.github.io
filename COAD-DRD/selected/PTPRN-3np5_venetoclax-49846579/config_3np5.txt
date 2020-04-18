@@ -1,0 +1,10 @@
+receptor = 3np5.pdb.prot.pdbqt
+center_x = 4.050000000000001
+center_y = 21.208
+center_z = 10.8625
+
+size_x = 55
+size_y = 54
+size_z = 57
+
+exhaustiveness = 10

@@ -1,0 +1,10 @@
+receptor = 4gls.pdb.prot.pdbqt
+center_x = 14.308
+center_y = -8.8275
+center_z = 20.938000000000002
+
+size_x = 73
+size_y = 63
+size_z = 93
+
+exhaustiveness = 10

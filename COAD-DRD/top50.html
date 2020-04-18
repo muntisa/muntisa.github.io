@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-61606930-1');
+	</script>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>COAD-DRD @ Top 50 drugs</title>
+	<meta name="keywords" content="Docking, drug, repurposing, Vina, Autodock, Affinity energy">
+	
+	<meta name="description" content="RNASA-IMEDIR project to open docking results in COAD.">
+	<meta name="author" content="Cristian R Munteanu">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+	</script>
+	
+	<!-- File included -->
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="preload" as="document" href="extras/top50_byGene.html">
+	<link rel="preload" as="document" href="extras/top50_byDrugName.html">
+	<link rel="preload" as="document" href="extras/top50_byPDB.html">
+	
+	<!-- Dynamic table -->
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        var myTable = $('#example').DataTable();
+        $('#example').on('click', 'tbody td', function () {
+            myTable.cell(this).edit();
+        });
+    });
+	</script>
+	
+</head>
+
+<body>
+	<!-- Header menu -->
+	<div id="logo">
+		<h1><span>COAD-DRD: Colon Adenocarcinoma Drug Repurposing with Docking</span>
+	</div>
+	
+	<!-- Menu options -->
+	<div id="header">
+		<div id="menu" class="container">
+			<ul>				
+				<li><a href="index.html" accesskey="1" title="">Home</a></li>
+				<li><a href="selected.html" accesskey="3" title="">Selected</a></li>
+				<li class="current_page_item"><a href="top50.html" accesskey="2" title="">Top 50</a></li>
+				<li><a href="fullByGenes.html" accesskey="4" title="">Full by Genes</a></li>
+				<li><a href="fullByDrugNames.html" accesskey="5" title="">Full by Drugs</a></li>
+				<li><a href="fullDB.html" accesskey="6" title="">Full DB</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div align="center">
+		<p>The best 50 interactions (most negative AE values) are presented below. The dynamic plots are organised by gene, target, drug name or compound.</br> No of genes = 4; No of PDBs = 22; No of drug names = 10; No of compounds = 10. More PDBs correspond to a gene; more compounds correspond to a drug name.</p>
+	</div>
+	
+	<div align="center">
+		<iframe src="extras/top50_byGene.html" height="500" width="800" frameborder="0" scrolling=yes seamless  ></iframe>
+	</div>
+	<div align="center">
+		<iframe src="extras/top50_byDrugName.html" height="500" width="800" frameborder="0" scrolling=yes seamless  ></iframe>
+	</div>
+	<div align="center">
+		<iframe src="extras/top50_byPDB.html" height="500" width="800" frameborder="0" scrolling=yes seamless  ></iframe>
+	</div>
+	
+		<!-- Generated dynamic table tr style="text-align: center;" -->	
+	<div align="center">
+		<p><b>Top 50 innteractions between PubChem drugs and genes/proteins involved in COAD:</b></p>
+		<table table id="example" style="width:100%" class="display" style="font-family:"Courier New";>
+  <thead>
+    <tr style="text-align: center;">
+      <th>AE</th>
+      <th>HGNC_symbol</th>
+      <th>DrugName</th>
+      <th>ProteinID</th>
+      <th>DrugCID</th>
+      <th>Drug</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-13.7</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>3s0i</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-13.4</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>4gjq</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-13.2</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>2evs</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-13.2</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>2evt</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-13.2</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>3s0k</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-13.2</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>3s0k</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-13.0</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>1swx</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-13.0</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>4ghs</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.9</td>
+      <td>GLTP</td>
+      <td>regorafenib</td>
+      <td>3s0k</td>
+      <td>11167602</td>
+      <td>regorafenib-11167602</td>
+    </tr>
+    <tr>
+      <td>-12.8</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>2evl</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.8</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>3s0i</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.8</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4gh0</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>1sx6</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>3ric</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>3rzn</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>3s0k</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>4gh0</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>4gh0</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.7</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4gxg</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.6</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>3rzn</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.6</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4gxd</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.6</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>4gxg</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.6</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>4h2z</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.5</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>1sx6</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.5</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>2euk</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.5</td>
+      <td>GLTP</td>
+      <td>abemaciclib</td>
+      <td>3s0k</td>
+      <td>46220502</td>
+      <td>abemaciclib-46220502</td>
+    </tr>
+    <tr>
+      <td>-12.5</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4ghp</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>1sx6</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>2euk</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>2evd</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>olaparib</td>
+      <td>2evt</td>
+      <td>23725625</td>
+      <td>olaparib-23725625</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>vemurafenib</td>
+      <td>3s0k</td>
+      <td>42611257</td>
+      <td>vemurafenib-42611257</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>dactinomycin</td>
+      <td>4gh0</td>
+      <td>457193</td>
+      <td>dactinomycin-457193</td>
+    </tr>
+    <tr>
+      <td>-12.4</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4ghs</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>2eum</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>PTPRN</td>
+      <td>venetoclax</td>
+      <td>3np5</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>3ric</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>GLTP</td>
+      <td>ibrutinib</td>
+      <td>3s0k</td>
+      <td>24821094</td>
+      <td>ibrutinib-24821094</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>GLTP</td>
+      <td>nilotinib</td>
+      <td>4gjq</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.3</td>
+      <td>GLTP</td>
+      <td>venetoclax</td>
+      <td>4gxd</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>2evd</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>2evl</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>GLTP</td>
+      <td>sonidegib</td>
+      <td>2evt</td>
+      <td>24775005</td>
+      <td>sonidegib-24775005</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>PTPRN</td>
+      <td>nilotinib</td>
+      <td>3np5</td>
+      <td>644241</td>
+      <td>nilotinib-644241</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>GLTP</td>
+      <td>alectinib</td>
+      <td>4ghs</td>
+      <td>49806720</td>
+      <td>alectinib-49806720</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>GLTP</td>
+      <td>alectinib</td>
+      <td>4gjq</td>
+      <td>49806720</td>
+      <td>alectinib-49806720</td>
+    </tr>
+    <tr>
+      <td>-12.2</td>
+      <td>VEGFA</td>
+      <td>venetoclax</td>
+      <td>4gls</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.1</td>
+      <td>FABP6</td>
+      <td>abemaciclib</td>
+      <td>2mm3</td>
+      <td>46220502</td>
+      <td>abemaciclib-46220502</td>
+    </tr>
+    <tr>
+      <td>-12.1</td>
+      <td>FABP6</td>
+      <td>venetoclax</td>
+      <td>2mm3</td>
+      <td>49846579</td>
+      <td>venetoclax-49846579</td>
+    </tr>
+    <tr>
+      <td>-12.1</td>
+      <td>GLTP</td>
+      <td>dactinomycin</td>
+      <td>3s0i</td>
+      <td>457193</td>
+      <td>dactinomycin-457193</td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+
+	<!-- Copyright links, logos-->	
+	<div id="copyright">
+		<p>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
+			<a href="https://www.fic.udc.es/" target="_blank"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
+			<a href="https://www.citic.udc.es/" target="_blank"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
+			<a href="https://www.udc.es/en/" target="_blank"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
+		</p>
+	
+		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/" target="_blank">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications" target="_blank">Cristian R Munteanu</a></p>
+	</div>
+
+</body>
+
+</html>

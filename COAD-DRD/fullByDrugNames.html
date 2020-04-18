@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-61606930-1');
+	</script>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>COAD-DRD @ By Drugs</title>
+	<meta name="keywords" content="Docking, drug, repurposing, Vina, Autodock, Affinity energy">
+	
+	<meta name="description" content="RNASA-IMEDIR project to open docking results in COAD.">
+	<meta name="author" content="Cristian R Munteanu">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+	</script>
+	
+	<!-- File included -->
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="preload" as="document" href="extras/full_byDrugName.html">
+	
+	<!-- Dynamic table -->
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        var myTable = $('#example').DataTable();
+        $('#example').on('click', 'tbody td', function () {
+            myTable.cell(this).edit();
+        });
+    });
+	</script>
+	
+</head>
+
+<body>
+	<!-- Header menu -->
+	<div id="logo">
+		<h1><span>COAD-DRD: Colon Adenocarcinoma Drug Repurposing with Docking</span>
+	</div>
+	
+	<!-- Menu options -->
+	<div id="header">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Home</a></li>
+				<li><a href="selected.html" accesskey="3" title="">Selected</a></li>
+				<li><a href="top50.html" accesskey="2" title="">Top 50</a></li>
+				
+				<li><a href="fullByGenes.html" accesskey="4" title="">Full by Genes</a></li>
+				<li class="current_page_item"><a href="fullByDrugNames.html" accesskey="5" title="">Full by Drugs</a></li>
+				<li><a href="fullDB.html" accesskey="6" title="">Full DB</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div align="center">
+		<p>All docking interactions for COAD drug repurposing organised by drug name are presented below. Each drug has a specific docking signature on COAD genes.</br> No of genes = 16; No of PDBs = 155; No of drug names = 81; No of compounds = 151. More PDBs correspond to a gene; more compounds correspond to a drug name. Due to the content of the Webpage elements, it is possible to take a few second for the loading.</p>
+	</div>
+	
+	<div align="center">
+		<a href="extras/full_byDrugName.html" target="_blank">[pop out]</a></br>
+		<iframe src="extras/full_byDrugName.html" height="500" width="600" frameborder="0" scrolling=yes seamless  ></iframe>
+	</div>
+	
+	<div align="center">
+		<a href="extras/full_byDrugNameStats.html" target="_blank">[pop out]</a></br>
+		<iframe src="extras/full_byDrugNameStats.html" height="500" width="600" frameborder="0" scrolling=yes seamless  ></iframe>
+	</div>	
+	
+	<!-- Copyright links, logos-->	
+	<div id="copyright">
+		<p>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
+			<a href="https://www.fic.udc.es/" target="_blank"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
+			<a href="https://www.citic.udc.es/" target="_blank"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
+			<a href="https://www.udc.es/en/" target="_blank"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
+		</p>
+	
+		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/" target="_blank">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications" target="_blank">Cristian R Munteanu</a></p>
+	</div>
+
+</body>
+
+</html>

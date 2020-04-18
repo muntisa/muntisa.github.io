@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-61606930-1');
+	</script>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>COAD-DRD @ Home</title>
+	<meta name="keywords" content="Docking" />
+	
+	<meta name="description" content="RNASA-IMEDIR project for Colon Adenocarcinoma Drug Repurposing with Docking."><meta name="author" content="Cristian R Munteanu">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+	</script>
+	
+	<!-- File included -->
+	<link rel="stylesheet" type="text/css" href="default.css">
+	
+	<!-- Dynamic table -->
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        var myTable = $('#example').DataTable();
+        $('#example').on('click', 'tbody td', function () {
+            myTable.cell(this).edit();
+        });
+    });
+	</script>
+</head>
+
+<body>
+	<!-- Header menu -->
+	<div id="logo">
+		<h1><span>COAD-DRD: Colon Adenocarcinoma Drug Repurposing with Docking</span>
+	</div>
+	
+	<!-- Menu options -->
+	<div id="header">
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Home</a></li>
+				<li><a href="selected.html" accesskey="3" title="">Selected</a></li>
+				<li><a href="top50.html" accesskey="2" title="">Top 50</a></li>
+				<li><a href="fullByGenes.html" accesskey="4" title="">Full by Genes</a></li>
+				<li><a href="fullByDrugNames.html" accesskey="5" title="">Full by Drugs</a></li>
+				<li><a href="fullDB.html" accesskey="6" title="">Full DB</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Including top5 multidocking visualization-->
+	
+		<!-- Tools -->	
+	<table style="width: 100%; text-align: justify; margin-left: auto; margin-right: auto; font-size:80%" border="0" cellpadding="5" cellspacing="5" >
+		<tbody>
+			<tr>
+				<td style="text-align: justify; vertical-align: top; width: 33%;">
+					<p><b>COAD-DRD</b> presents the docking results for drug repurposing in <b>colon adenocarcinoma</b> by using dynamic molecular structures and plots. Graphical representations show docking signatures of drugs on COAD genes. The drug structures have been downloaded from PubChem and the protein targets from PDB Databank. Affinity energy (AE, kcal/mol units) of the complex is the criteria for stable interaction. The interactions are stronger if the AE is lower (more negative, more attractive interactions). AE values are calculated with the <a href="http://vina.scripps.edu/" target="_blank">Autodock Vina</a> free software (our group <b>BioCAI</b> HPC cluster).</p>
+					<p>Several sections are presented: "Selected" drugs that could be used for COAD (with nglview widget for the docking results for the binding modes, all docking files, inside atom contacts and list of interactions), "Top 50" best interactions using affinity energies of the drugs to the protein targets, "Full by Genes"  as dynamic plots of all calculated interactions by each gene, "Full by Drugs" as dynamic plots in order to understand the drug docking signatures on the COAD genes, and "Full DB" as a dynamic table with all docking results.</p>
+				</td>
+				<td style="width: 34%; text-align: center; vertical-align: top;">
+					<div align="center">
+						<img src="images/5l8i_abemaciclib.png" alt="5l8i and abemaciclib.png">
+						<p><b>Abemaciclib interaction with FABP6 (PDB ID: <a href="https://www.rcsb.org/structure/5l8i" target="_blank">5l8i</a>)</b></p>
+						
+					</div>	
+				</td>
+				<td style="text-align: justify; vertical-align: top; width: 33%;">
+						<p><font color="#27AAE1"><b>Results</b>: Combining Machine Learning methods with docking studies, we proposed the best drugs for colon adenocarcinoma. The most interesting interactions have been seen for GLTP - Nilotinib, PTPRN - Venetoclax, VEGFA - Venetoclax and FABP6 - Abemaciclib (gene - drug pairs). Our calculations tested 155 PDB structures with 159 ligands that corresponds to 89 drugs (over 23,000 docking calculations for gene/protein - drug/compound pairs). The use can download all docking files and visualize the complexes for the selected drugs, zoom into the dynamic plots to check any drug-gene interaction, save pictures of the 3D complex, get the entire database as CSV. In addition, the source of these webpages and the scripts that generated the dynamic 3D complexes, plots and tables can be found at the open <a href="https://github.com/muntisa/muntisa.github.io/tree/master/COAD-DRD/" target="_blank">GitHub repository</a>. Details about the results are under review at international JCR journal. 
+						</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Copyright links, logos-->	
+	<div id="copyright">
+		<p>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
+			<a href="https://www.fic.udc.es/" target="_blank"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
+			<a href="https://www.citic.udc.es/" target="_blank"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
+			<a href="https://www.udc.es/en/" target="_blank"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
+			<a href="http://www.rnasa-imedir.udc.es/en/" target="_blank"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
+		</p>
+	
+		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/" target="_blank">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications" target="_blank">Cristian R Munteanu</a></p>
+	</div>
+
+</body>
+
+</html>

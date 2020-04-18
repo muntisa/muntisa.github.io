@@ -1,0 +1,4 @@
+3np5_pdb_prot:C:SER526:CA;3np5_pdb_prot:A:HIS520:CD2;3np5_pdb_prot:C:GLU470:CB;3np5_pdb_prot:C:GLU470:CD;3np5_pdb_prot:D:SER526:CB;3np5_pdb_prot:D:ALA528:CB;3np5_pdb_prot:C:HIS520:CE1;3np5_pdb_prot:A:ASN524:O;3np5_pdb_prot:A:ASN524:CB;3np5_pdb_prot:C:LEU527:CB;3np5_pdb_prot:C:GLU470:OE1;3np5_pdb_prot:C:ARG517:CD;3np5_pdb_prot:C:ARG517:CB;3np5_pdb_prot:C:LEU527:CD1;3np5_pdb_prot:C:GLU470:CG;3np5_pdb_prot:C:SER526:CB;3np5_pdb_prot:A:SER526:CB;3np5_pdb_prot:B:SER526:CB;::/-/3np5_pdb_prot:C:GLU470:OE1;3np5_pdb_prot:B:SER526:OG;3np5_pdb_prot:C:ASN524:ND2;
+
+3np5_pdb_prot:C:GLU470:OE1;3np5_pdb_prot:B:SER526:OG;3np5_pdb_prot:C:ASN524:ND2;::", 'mhbnds'
+

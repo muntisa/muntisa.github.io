@@ -1,0 +1,9 @@
+4gls_pdb_prot:E:THR24::/+/4gls_pdb_prot:E:LEU25::/+/4gls_pdb_prot:E:VAL26::/+/4gls_pdb_prot:E:ASP27::/+/4gls_pdb_prot:E:ILE28::/+/4gls_pdb_prot:E:PHE29::/+/4gls_pdb_prot:E:GLN30::
+
+4gls_pdb_prot:F:GLU57:CB;4gls_pdb_prot:E:LEU25:N;4gls_pdb_prot:E:ASP27:CG;4gls_pdb_prot:F:GLY52:O;4gls_pdb_prot:F:THR24:CG2;4gls_pdb_prot:E:THR24:CG2;4gls_pdb_prot:E:PHE29:CD2;4gls_pdb_prot:E:SER43:CB;4gls_pdb_prot:E:ASP27:CG;4gls_pdb_prot:E:LEU25:O;4gls_pdb_prot:E:GLN30:CA;4gls_pdb_prot:E:ASP27:CG;4gls_pdb_prot:E:PHE29:CB;4gls_pdb_prot:E:PHE29:CB;4gls_pdb_prot:E:GLN30:CB;4gls_pdb_prot:E:PHE29:CE2;4gls_pdb_prot:F:CYS61:CB;::/-/4gls_pdb_prot:E:LEU25:O;4gls_pdb_prot:F:CYS61:N;
+
+out_4gls_venetoclax_49846579_model1: :LIG1:H;out_4gls_venetoclax_49846579_model1: :LIG1:O;::", 'lhbnds'
+
+4gls_pdb_prot:E:LEU25:O;4gls_pdb_prot:F:CYS61:N;::", 'mhbnds'
+
+
