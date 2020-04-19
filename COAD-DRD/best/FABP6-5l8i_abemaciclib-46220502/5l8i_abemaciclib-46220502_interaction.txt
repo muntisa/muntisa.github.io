@@ -1,0 +1,1 @@
+5l8i_pdb_prot:A:MET75:SD;5l8i_pdb_prot:A:PHE80:CE1;5l8i_pdb_prot:A:MET19:CE;5l8i_pdb_prot:A:TYR98:CE1;5l8i_pdb_prot:A:PHE18:CE2;5l8i_pdb_prot:A:LEU22:CD1;5l8i_pdb_prot:A:LEU22:CD2;5l8i_pdb_prot:A:PHE95:CE2;5l8i_pdb_prot:A:THR74:CG2;5l8i_pdb_prot:A:PHE35:CD2;5l8i_pdb_prot:A:TYR98:CZ;5l8i_pdb_prot:A:ILE115:CD1

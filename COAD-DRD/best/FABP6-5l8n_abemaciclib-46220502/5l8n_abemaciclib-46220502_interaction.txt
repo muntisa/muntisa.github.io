@@ -1,0 +1,1 @@
+5l8n_pdb_prot:B:ALA32:CB;5l8n_pdb_prot:B:PHE64:CZ;5l8n_pdb_prot:B:MET19:CE;5l8n_pdb_prot:B:LEU91:CB;5l8n_pdb_prot:B:VAL28:CG1;5l8n_pdb_prot:B:PHE64:CE2;5l8n_pdb_prot:B:GLN100:NE2;5l8n_pdb_prot:B:TRP50:CE2;5l8n_pdb_prot:B:TRP50:CG;5l8n_pdb_prot:B:GLY76:CA;5l8n_pdb_prot:B:ILE72:CD1;5l8n_pdb_prot:B:TRP50:CD2;5l8n_pdb_prot:B:MET75:CB

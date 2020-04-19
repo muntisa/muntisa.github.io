@@ -1,0 +1,1 @@
+1o1v_pdb_prot:A:SER54:HG;1o1v_pdb_prot:A:MET59:CE;1o1v_pdb_prot:A:ILE23:CD1;1o1v_pdb_prot:A:TYR53:CE2;1o1v_pdb_prot:A:VAL27:CG1;1o1v_pdb_prot:A:ILE23:CG2;1o1v_pdb_prot:A:LYS77:CD;1o1v_pdb_prot:A:GLN51:HE21;1o1v_pdb_prot:A:VAL27:CG2;1o1v_pdb_prot:A:MET74:CG;1o1v_pdb_prot:A:SER24:H;1o1v_pdb_prot:A:TYR53:CD2;1o1v_pdb_prot:A:TYR14:OH;1o1v_pdb_prot:A:VAL27:CB

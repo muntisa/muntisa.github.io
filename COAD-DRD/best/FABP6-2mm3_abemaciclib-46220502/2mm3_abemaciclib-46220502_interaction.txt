@@ -1,0 +1,5 @@
+2mm3_pdb_prot::PHE47,GLN99,MET8,PHE2,THR38,GLN51,PHE79,LEU90,TYR97,ARG121,VAL109,SER101,TRP49,;::", 'mResLab'
+
+2mm3_pdb_prot:A:PHE47::/+/2mm3_pdb_prot:A:THR48::/+/2mm3_pdb_prot:A:TRP49::/+/2mm3_pdb_prot:A:SER50::/+/2mm3_pdb_prot:A:GLN51::/+/2mm3_pdb_prot:A:PHE47::/+/2mm3_pdb_prot:A:THR48::/+/2mm3_pdb_prot:A:TRP49::/+/2mm3_pdb_prot:A:SER50::/+/2mm3_pdb_prot:A:GLN51::/+/2mm3_pdb_prot:A:TYR97::/+/2mm3_pdb_prot:A:HIS98::/+/2mm3_pdb_prot:A:GLN99::/+/2mm3_pdb_prot:A:THR100::/+/2mm3_pdb_prot:A:SER101::", 'mSSRes'
+
+2mm3_pdb_prot:A:PHE47:CZ;2mm3_pdb_prot:A:GLN99:HE21;2mm3_pdb_prot:A:MET8:CB;2mm3_pdb_prot:A:PHE47:CE1;2mm3_pdb_prot:A:GLN99:NE2;2mm3_pdb_prot:A:PHE2:CB;2mm3_pdb_prot:A:PHE47:CE2;2mm3_pdb_prot:A:THR38:CB;2mm3_pdb_prot:A:GLN51:HE21;2mm3_pdb_prot:A:PHE2:CD2;2mm3_pdb_prot:A:PHE79:CZ;2mm3_pdb_prot:A:LEU90:CB;2mm3_pdb_prot:A:GLN51:NE2;2mm3_pdb_prot:A:GLN99:CD;2mm3_pdb_prot:A:TYR97:CE2;2mm3_pdb_prot:A:ARG121:CD;2mm3_pdb_prot:A:VAL109:N;2mm3_pdb_prot:A:SER101:CB;2mm3_pdb_prot:A:TRP49:CZ3;2mm3_pdb_prot:A:VAL109:C;2mm3_pdb_prot:A:MET8:CG;2mm3_pdb_prot:A:SER101:HG;2mm3_pdb_prot:A:THR38:CG2;2mm3_pdb_prot:A:PHE2:CG;::", 'mClose'

@@ -1,0 +1,10 @@
+receptor = 1o1u.pdb.prot.pdbqt
+center_x = 0.8170000000000002
+center_y = 0.2375000000000007
+center_z = -2.168000000000003
+
+size_x = 39
+size_y = 33
+size_z = 42
+
+exhaustiveness = 10

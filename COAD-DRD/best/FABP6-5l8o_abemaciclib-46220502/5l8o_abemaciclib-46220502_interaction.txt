@@ -1,0 +1,1 @@
+5l8o_pdb_prot:A:LEU22:CD1;5l8o_pdb_prot:A:TYR98:CD1;5l8o_pdb_prot:A:TRP50:CD1;5l8o_pdb_prot:A:LEU22:CD2;5l8o_pdb_prot:A:TYR98:CG;5l8o_pdb_prot:A:TRP50:CG;5l8o_pdb_prot:A:ILE72:CB;5l8o_pdb_prot:A:PHE64:CD1;5l8o_pdb_prot:A:THR74:CG2;5l8o_pdb_prot:A:ILE115:CD1;5l8o_pdb_prot:A:PHE95:CE1;5l8o_pdb_prot:A:VAL84:CG2

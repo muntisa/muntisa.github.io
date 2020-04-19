@@ -1,0 +1,1 @@
+1o1u_pdb_prot:A:PHE34:CG;1o1u_pdb_prot:A:TYR53:CE2;1o1u_pdb_prot:A:PHE34:CE2;1o1u_pdb_prot:A:TYR53:CD2;1o1u_pdb_prot:A:GLU29:CB;1o1u_pdb_prot:A:LYS30:CD;1o1u_pdb_prot:A:PHE34:CD1;1o1u_pdb_prot:A:LYS30:HZ2;1o1u_pdb_prot:A:ASP26:CB;1o1u_pdb_prot:A:PHE34:CD2

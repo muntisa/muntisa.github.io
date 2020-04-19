@@ -1,0 +1,10 @@
+receptor = 2mm3.pdb.prot.pdbqt
+center_x = -31.488500000000002
+center_y = 24.374
+center_z = 9.959
+
+size_x = 41
+size_y = 42
+size_z = 35
+
+exhaustiveness = 10
