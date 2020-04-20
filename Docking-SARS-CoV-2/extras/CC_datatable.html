@@ -1,93 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-61606930-1');
-	</script>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Docking SARS-CoV-2 @ Hits Chemical Checker</title>
-	<meta name="keywords" content="Docking, drug, repurposing, Vina, Autodock, Affinity energy" />
-	
-	<meta name="description" content="RNASA-IMEDIR project to open docking results in SARS-CoV-2 research."><meta name="author" content="Cristian R Munteanu">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" language="javascript"
-        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-	</script>
-	
-	<!-- File included -->
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link rel="preload" as="document" href="extras/home_multiDockingTop5.html">
-	
-	<!-- Dynamic table -->
-	<script type="text/javascript" language="javascript">
-    $(document).ready(function () {
-        var myTable = $('#example').DataTable();
-        $('#example').on('click', 'tbody td', function () {
-            myTable.cell(this).edit();
-        });
-    });
-	</script>
-</head>
-
-<body>
-	<!-- Header menu -->
-	<div id="logo">
-		<h1><span>Docking <img alt="logo" src="images/logo.png" height="25" width="50"> SARS-CoV-2</span>
-	</div>
-	
-	<!-- Menu options -->
-	<div id="header">
-		<div id="menu" class="container">
-			<ul>
-				<li><a href="index.html" accesskey="1" title="">Home</a></li>
-				<li><a href="repurposing.html" accesskey="2" title="">Drug repurposing</a></li>
-				<li><a href="deepmind.html" accesskey="3" title="">DeepMind repurposing</a></li>
-				<li><a href="hitsPublications.html" accesskey="4" title="">Hits from publications</a></li>
-				<li class="current_page_item"><a href="hitsChemicalChecker.html" accesskey="5" title="">Hits from Chemical Checker</a></li>
-				<li><a href="all.html" accesskey="6" title="">All interactions</a></li>
-			</ul>
-		</div>
-	</div>
-	
-	<!-- Including top5 multidocking visualization-->
-	<div align="center" style="text-align: justify; font-size:80%">
-		<!-- <iframe src="extras/home_multiDockingTop5.html" height="350" width="400" frameborder="0" scrolling=yes seamless ></iframe> -->
-		<p>This section is adding docking AE values to the scores calculed with an external tool <a href="https://sbnb.irbbarcelona.org/covid19/">Chemical Checker</a>. The mixed score based on chemical similarity using different levels of supporting evidence (computational, preclinical, clinical, publications, etc.). The table presents the ligands from Chemical Checker with AE in our database (not all the compounds are present in our dataset but we are still running calculations). The plots demonstrating the multi-drug interactions by protein target in our dataset and the drug signatures for multiple-targets (only AE < -8.5 kcal/mol).</p>
-		<p><b>Objective</b>: Adding docking interactions to the Chemical Checker mixed score to propose active molecules against COVID-19.</p>
-	</div>
-
-
-	<!-- Including plots-->
-	<div align="center">
-		<table style="width:100%">
-			<tr align="center">
-				<th>
-					<iframe src="extras/CC_byTarget.html" height="500" width="600" frameborder="0" scrolling=yes seamless  ></iframe>
-				</th>
-				<th><iframe src="extras/CC_byDrugName.html" height="500" width="600" frameborder="0" scrolling=yes seamless  ></iframe>
-				</th>
-			</tr>
-		</table>		
-	</div>	
-	
-	
-	<!-- Generated dynamic table tr style="text-align: center;" -->	
-
-  <div align="center">
-	<p><b>Interactions between Databank drug ligands with human and virus protein targets</b></p>
-  <table table id="example" style="width:100%" class="display" style="font-family:"Courier New";>
-   <thead>
-    <tr style="text-align: center;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
       <th>AE</th>
       <th>support</th>
       <th>GENERIC_NAME</th>
@@ -95,7 +8,7 @@
       <th>Ligand</th>
     </tr>
   </thead>
-  <tbody style="text-align: center;">
+  <tbody>
     <tr>
       <td>-11.5</td>
       <td>15</td>
@@ -14686,24 +14599,3 @@
     </tr>
   </tbody>
 </table>
-		
-
-	<!-- Acknowledgements -->	
-	
-	
-	<!-- Copyright links, logos-->	
-	<div id="copyright">
-		<p>
-			<a href="http://www.rnasa-imedir.udc.es/en/"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
-			<a href="https://www.fic.udc.es/"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
-			<a href="https://www.citic.udc.es/"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
-			<a href="https://www.udc.es/en/"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
-			<a href="http://www.rnasa-imedir.udc.es/en/"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
-		</p>
-	
-		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications">Cristian R Munteanu</a></p>
-	</div>
-
-</body>
-
-</html>
