@@ -1,105 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61606930-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-61606930-1');
-	</script>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Docking SARS-CoV-2 @ Hits Publications</title>
-	<meta name="keywords" content="Docking, drug, repurposing, Vina, Autodock, Affinity energy" />
-	
-	<meta name="description" content="RNASA-IMEDIR project to open docking results in SARS-CoV-2 research."><meta name="author" content="Cristian R Munteanu">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" language="javascript"
-        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
-	</script>
-	
-	<!-- File included -->
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link rel="preload" as="document" href="extras/home_multiDockingTop5.html">
-	
-	<!-- Dynamic table -->
-	<script type="text/javascript" language="javascript">
-    $(document).ready(function () {
-        var myTable = $('#example').DataTable();
-        $('#example').on('click', 'tbody td', function () {
-            myTable.cell(this).edit();
-        });
-    });
-	</script>
-</head>
-
-<body>
-	<!-- Header menu -->
-	<div id="logo">
-		<h1><span>Docking <img alt="logo" src="images/logo.png" height="25" width="50"> SARS-CoV-2</span>
-	</div>
-	
-	<!-- Menu options -->
-	<div id="header">
-		<div id="menu" class="container">
-			<ul>
-				<li><a href="index.html" accesskey="1" title="">Home</a></li>
-				<li><a href="repurposing.html" accesskey="2" title="">Drug repurposing</a></li>
-				<li><a href="deepmind.html" accesskey="3" title="">DeepMind repurposing</a></li>
-				<li class="current_page_item"><a href="hitsPublications.html" accesskey="4" title="">Hits from publications</a></li>
-				<li><a href="hitsChemicalChecker.html" accesskey="5" title="">Hits from Chemical Checker</a></li>
-				<li><a href="all.html" accesskey="6" title="">All interactions</a></li>
-			</ul>
-		</div>
-	</div>
-	
-	
-	<div align="center" style="text-align: justify; font-size:80%">
-		
-		<p>Different publications are proposing these 28 compounds (drugs or natural products) for possible solution for the COVID-19 treatment. Some of them are even tested into clinical trials. This section is presenting our docking interactions with the current protein targets. Please remember that this web tool is always running new targets or compounds.</p>
-		<p><b>Objective</b>: Presenting the docking interactions for the best molecules in the current publications to propose active molecules against COVID-19.</p>
-		<font color="#27AAE1">
-		<p><b>Results</b>: Resveratrol, vitamin D3, cucurmin and NMN shows better interactions that chloroquine and hydroxychloroquine on ACE2 receptor or SARS-CoV-2 main protease (Mpro).</p>
-		</font>
-	</div>
-
-
-	<!-- Including plots-->
-	<div align="center">
-		<table style="width:100%">
-			<tr align="center">
-				<th><iframe src="extras/publications_CompoundSignaturesMultipleTargets.html" height="600" width="800" frameborder="0" scrolling=yes seamless  ></iframe>
-				</th>
-			</tr>
-			<tr align="center">
-				<th>
-					<iframe src="extras/publications_boxplot_byTargets.html" height="600" width="800" frameborder="0" scrolling=yes seamless  ></iframe>
-				</th>
-			</tr>
-		</table>		
-	</div>	
-	
-	
-	<!-- Generated dynamic table tr style="text-align: center;" -->	
-
-  <div align="center">
-	<p><b>Interactions between Chemical Checker compounds with human and virus protein targets</b></p>
-  <table table id="example" style="width:100%" class="display" style="font-family:"Courier New";>
+<table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: center;">
+    <tr style="text-align: right;">
       <th>AE</th>
       <th>Ligand</th>
       <th>GENERIC_NAME</th>
       <th>Target</th>
     </tr>
   </thead>
-  <tbody style="text-align: center;">
+  <tbody>
     <tr>
       <td>-9.4</td>
       <td>DB05611</td>
@@ -708,24 +616,3 @@
     </tr>
   </tbody>
 </table>
-		
-
-	<!-- Acknowledgements -->	
-	
-	
-	<!-- Copyright links, logos-->	
-	<div id="copyright">
-		<p>
-			<a href="http://www.rnasa-imedir.udc.es/en/"><img alt="RNASA-IMEDIR" src="images/rnasa_imedir.png" id="footerimg"></a>
-			<a href="https://www.fic.udc.es/"><img alt="FIC" src="images/fic.png" id="footerimg"></a>
-			<a href="https://www.citic.udc.es/"><img alt="CITIC" src="images/citic.png" id="footerimg"></a>
-			<a href="https://www.udc.es/en/"><img alt="UDC" src="images/udc.png" id="footerimg"></a>
-			<a href="http://www.rnasa-imedir.udc.es/en/"><img alt="INIBIC" src="images/inibic.png" id="footerimg"></a>
-		</p>
-	
-		<p>&copy; <a href="https://sites.google.com/view/rnasa-imedir-covid19/">RNASA-IMEDIR</a> | Created by <a href="https://sites.google.com/site/muntisa/publications">Cristian R Munteanu</a></p>
-	</div>
-
-</body>
-
-</html>

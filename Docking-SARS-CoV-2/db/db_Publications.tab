@@ -1,0 +1,102 @@
+AE	Ligand	GENERIC_NAME	Target
+-9.4	DB05611	Apilimod	6CS2
+-9.3	DB01410	Ciclesonide	6CS2
+-9.2	DB05611	Apilimod	6LZG
+-9.1	DB00845	Clofazimine	6CS2
+-8.8	DB00637	Astemizole	6CS2
+-8.7	DB04942	Tamibarotene	6CS2
+-8.6	DB12598	Nafamostat	6CS2
+-8.2	DB12116	Epigallocatechin gallate	6CS2
+-8.1	DB12582	Piperine	6CS2
+-8	DB01410	Ciclesonide	6LZG
+-7.9	DB13729	Camostat	6CS2
+-7.9	DB00153	Ergocalciferol	6CS2
+-7.9	DB01852	Kaempherol	6CS2
+-7.9	DB12598	Nafamostat	6LZG
+-7.9	DB00755	Tretinoin	6CS2
+-7.8	DB00845	Clofazimine	6LZG
+-7.8	DB00153	Ergocalciferol	6LZG
+-7.8	DB04216	Quercetin	6CS2
+-7.7	DB00459	Acitretin	6CS2
+-7.7	DB00169	Cholecalciferol	6CS2
+-7.7	DB02709	Resveratrol	6CS2
+-7.6	DB01410	Ciclesonide	1R42
+-7.5	DB00845	Clofazimine	1R42
+-7.5	DB03227	Nicotinamide Mononucleotide	6CS2
+-7.5	DB04216	Quercetin	6LZG
+-7.5	DB14761	Remdesivir	6CS2
+-7.5	DB04942	Tamibarotene	6LZG
+-7.4	DB00169	Cholecalciferol	6LZG
+-7.4	DB12582	Piperine	6LZG
+-7.3	DB05611	Apilimod	6lu7
+-7.3	DB14086	Cianidanol	6CS2
+-7.3	DB03467	Naringenin	6CS2
+-7.2	DB12116	Epigallocatechin gallate	6LZG
+-7.2	DB04216	Quercetin	1R42
+-7.1	DB11672	Curcumin	6LZG
+-7.1	DB03467	Naringenin	6LZG
+-7.1	DB02709	Resveratrol	6LZG
+-7	DB13729	Camostat	6LZG
+-7	DB11672	Curcumin	6CS2
+-7	DB00153	Ergocalciferol	1R42
+-7	DB14761	Remdesivir	6LZG
+-6.9	DB00637	Astemizole	1R42
+-6.9	DB00637	Astemizole	6LZG
+-6.9	DB01852	Kaempherol	1R42
+-6.8	DB12116	Epigallocatechin gallate	6lu7
+-6.7	DB00459	Acitretin	1R42
+-6.7	DB00637	Astemizole	6lu7
+-6.7	DB04216	Quercetin	6lu7
+-6.6	DB00169	Cholecalciferol	1R42
+-6.6	DB14086	Cianidanol	6LZG
+-6.6	DB03467	Naringenin	1R42
+-6.6	DB03227	Nicotinamide Mononucleotide	6LZG
+-6.5	DB14086	Cianidanol	6lu7
+-6.5	DB00845	Clofazimine	6lu7
+-6.5	DB01611	Hydroxychloroquine	6CS2
+-6.5	DB12598	Nafamostat	6lu7
+-6.5	DB03227	Nicotinamide Mononucleotide	1R42
+-6.5	DB00755	Tretinoin	6LZG
+-6.4	DB00459	Acitretin	6LZG
+-6.4	DB01852	Kaempherol	6LZG
+-6.2	DB01410	Ciclesonide	6lu7
+-6.2	DB00153	Ergocalciferol	6lu7
+-6.1	DB01611	Hydroxychloroquine	6LZG
+-6.1	DB00755	Tretinoin	1R42
+-5.9	DB13729	Camostat	6lu7
+-5.9	DB00608	Chloroquine	1R42
+-5.9	DB00169	Cholecalciferol	6lu7
+-5.9	DB03227	Nicotinamide Mononucleotide	6lu7
+-5.9	DB00198	Oseltamivir	6CS2
+-5.9	DB02709	Resveratrol	1R42
+-5.9	DB04942	Tamibarotene	6lu7
+-5.8	DB00608	Chloroquine	6LZG
+-5.8	DB01611	Hydroxychloroquine	1R42
+-5.7	DB00459	Acitretin	6lu7
+-5.7	DB12466	Favipiravir	6lu7
+-5.7	DB01852	Kaempherol	6lu7
+-5.7	DB03467	Naringenin	6lu7
+-5.7	DB12582	Piperine	6lu7
+-5.6	DB00198	Oseltamivir	1R42
+-5.5	DB00126	Ascorbic acid	6LZG
+-5.5	DB00608	Chloroquine	6CS2
+-5.5	DB02709	Resveratrol	6lu7
+-5.4	DB00755	Tretinoin	6lu7
+-5.3	DB00126	Ascorbic acid	6lu7
+-5.3	DB00198	Oseltamivir	6LZG
+-5.2	DB11672	Curcumin	6lu7
+-5.2	DB14761	Remdesivir	6lu7
+-5.1	DB12466	Favipiravir	6CS2
+-5	DB00126	Ascorbic acid	1R42
+-4.9	DB12466	Favipiravir	6LZG
+-4.9	DB00627	Niacin	6LZG
+-4.9	DB00627	Niacin	6lu7
+-4.8	DB00126	Ascorbic acid	6CS2
+-4.8	DB01611	Hydroxychloroquine	6lu7
+-4.8	DB00627	Niacin	6CS2
+-4.7	DB00627	Niacin	1R42
+-4.6	DB00198	Oseltamivir	6lu7
+-4.4	DB00608	Chloroquine	6lu7
+-3.7	DB11780	Allicin	6CS2
+-3.6	DB11780	Allicin	6LZG
+-2.9	DB11780	Allicin	6lu7
